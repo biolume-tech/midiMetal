@@ -53,7 +53,7 @@ class Renderer: NSObject, MIDIMessageDelegate {
         setupVertexBuffer()
         setupUniformsBuffer()
         updateUniforms(size: currentSize, color: currentColor)
-
+        
         // Initialize MIDIController and set this Renderer as the delegate
         midiController = MIDIController()
         midiController?.delegate = self
@@ -98,8 +98,8 @@ class Renderer: NSObject, MIDIMessageDelegate {
         // to draw the visual elements with the specified size and color.
         updateUniforms(size: currentSize, color: currentColor)
     }
-
-
+    
+    
     
     func updateUniforms(size: Float, color: SIMD4<Float>) {
         var uniforms = Uniforms(size: size, color: color)
@@ -121,7 +121,7 @@ class Renderer: NSObject, MIDIMessageDelegate {
     func setupUniformsBuffer() {
         uniformsBuffer = Renderer.device.makeBuffer(length: MemoryLayout<Uniforms>.stride, options: [])
     }
-
+    
     
     
     private func setupShadersAndPipelineState(metalView: MTKView) {

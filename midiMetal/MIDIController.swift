@@ -24,7 +24,7 @@ class MIDIController {
     var midiInPort: MIDIPortRef = 0
     // Declare a weak, optional delegate variable of the type MIDIMessageDelegate?. The weak keyword prevents strong reference cycles, and the optional allows the delegate to be nil. This delegate will be notified of incoming MIDI messages.
     weak var delegate: MIDIMessageDelegate?
-
+    
     // Define the initializer for the MIDIController class. Initializers in Swift are called to create a new instance of a class.
     init() {
         // Call the setupMIDI method within the initializer to configure MIDI communication when an instance of MIDIController is created.
