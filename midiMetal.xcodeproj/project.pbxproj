@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C42934D52B91C76400D7C1C4 /* midiMetalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42934D42B91C76400D7C1C4 /* midiMetalApp.swift */; };
+		C42934D72B91C76400D7C1C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42934D62B91C76400D7C1C4 /* ContentView.swift */; };
+		C42934D92B91C76600D7C1C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42934D82B91C76600D7C1C4 /* Assets.xcassets */; };
+		C42934DD2B91C76600D7C1C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42934DC2B91C76600D7C1C4 /* Preview Assets.xcassets */; };
+		C42934E72B91C76600D7C1C4 /* midiMetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42934E62B91C76600D7C1C4 /* midiMetalTests.swift */; };
+		C42934F12B91C76600D7C1C4 /* midiMetalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42934F02B91C76600D7C1C4 /* midiMetalUITests.swift */; };
+		C42934F32B91C76600D7C1C4 /* midiMetalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42934F22B91C76600D7C1C4 /* midiMetalUITestsLaunchTests.swift */; };
+		C42935002B91C78700D7C1C4 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42934FF2B91C78700D7C1C4 /* MetalView.swift */; };
+		C42935022B91C79800D7C1C4 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42935012B91C79800D7C1C4 /* Renderer.swift */; };
+		C42935042B91C7A800D7C1C4 /* MIDIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42935032B91C7A800D7C1C4 /* MIDIController.swift */; };
+		C42935062B91C7C100D7C1C4 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C42935052B91C7C100D7C1C4 /* Shaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C42934E32B91C76600D7C1C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C42934C92B91C76400D7C1C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C42934D02B91C76400D7C1C4;
+			remoteInfo = midiMetal;
+		};
+		C42934ED2B91C76600D7C1C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C42934C92B91C76400D7C1C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C42934D02B91C76400D7C1C4;
+			remoteInfo = midiMetal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C42934D12B91C76400D7C1C4 /* midiMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = midiMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42934D42B91C76400D7C1C4 /* midiMetalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = midiMetalApp.swift; sourceTree = "<group>"; };
+		C42934D62B91C76400D7C1C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C42934D82B91C76600D7C1C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C42934DA2B91C76600D7C1C4 /* midiMetal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = midiMetal.entitlements; sourceTree = "<group>"; };
+		C42934DC2B91C76600D7C1C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C42934E22B91C76600D7C1C4 /* midiMetalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = midiMetalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42934E62B91C76600D7C1C4 /* midiMetalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = midiMetalTests.swift; sourceTree = "<group>"; };
+		C42934EC2B91C76600D7C1C4 /* midiMetalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = midiMetalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42934F02B91C76600D7C1C4 /* midiMetalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = midiMetalUITests.swift; sourceTree = "<group>"; };
+		C42934F22B91C76600D7C1C4 /* midiMetalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = midiMetalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C42934FF2B91C78700D7C1C4 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		C42935012B91C79800D7C1C4 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		C42935032B91C7A800D7C1C4 /* MIDIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIController.swift; sourceTree = "<group>"; };
+		C42935052B91C7C100D7C1C4 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		C42935072B91C80E00D7C1C4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C42934CE2B91C76400D7C1C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42934DF2B91C76600D7C1C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42934E92B91C76600D7C1C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C42934C82B91C76400D7C1C4 = {
+			isa = PBXGroup;
+			children = (
+				C42935072B91C80E00D7C1C4 /* README.md */,
+				C42934D32B91C76400D7C1C4 /* midiMetal */,
+				C42934E52B91C76600D7C1C4 /* midiMetalTests */,
+				C42934EF2B91C76600D7C1C4 /* midiMetalUITests */,
+				C42934D22B91C76400D7C1C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C42934D22B91C76400D7C1C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C42934D12B91C76400D7C1C4 /* midiMetal.app */,
+				C42934E22B91C76600D7C1C4 /* midiMetalTests.xctest */,
+				C42934EC2B91C76600D7C1C4 /* midiMetalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C42934D32B91C76400D7C1C4 /* midiMetal */ = {
+			isa = PBXGroup;
+			children = (
+				C42934D42B91C76400D7C1C4 /* midiMetalApp.swift */,
+				C42934D62B91C76400D7C1C4 /* ContentView.swift */,
+				C42934D82B91C76600D7C1C4 /* Assets.xcassets */,
+				C42934DA2B91C76600D7C1C4 /* midiMetal.entitlements */,
+				C42934DB2B91C76600D7C1C4 /* Preview Content */,
+				C42934FF2B91C78700D7C1C4 /* MetalView.swift */,
+				C42935012B91C79800D7C1C4 /* Renderer.swift */,
+				C42935032B91C7A800D7C1C4 /* MIDIController.swift */,
+				C42935052B91C7C100D7C1C4 /* Shaders.metal */,
+			);
+			path = midiMetal;
+			sourceTree = "<group>";
+		};
+		C42934DB2B91C76600D7C1C4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C42934DC2B91C76600D7C1C4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C42934E52B91C76600D7C1C4 /* midiMetalTests */ = {
+			isa = PBXGroup;
+			children = (
+				C42934E62B91C76600D7C1C4 /* midiMetalTests.swift */,
+			);
+			path = midiMetalTests;
+			sourceTree = "<group>";
+		};
+		C42934EF2B91C76600D7C1C4 /* midiMetalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C42934F02B91C76600D7C1C4 /* midiMetalUITests.swift */,
+				C42934F22B91C76600D7C1C4 /* midiMetalUITestsLaunchTests.swift */,
+			);
+			path = midiMetalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C42934D02B91C76400D7C1C4 /* midiMetal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42934F62B91C76600D7C1C4 /* Build configuration list for PBXNativeTarget "midiMetal" */;
+			buildPhases = (
+				C42934CD2B91C76400D7C1C4 /* Sources */,
+				C42934CE2B91C76400D7C1C4 /* Frameworks */,
+				C42934CF2B91C76400D7C1C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = midiMetal;
+			productName = midiMetal;
+			productReference = C42934D12B91C76400D7C1C4 /* midiMetal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C42934E12B91C76600D7C1C4 /* midiMetalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42934F92B91C76600D7C1C4 /* Build configuration list for PBXNativeTarget "midiMetalTests" */;
+			buildPhases = (
+				C42934DE2B91C76600D7C1C4 /* Sources */,
+				C42934DF2B91C76600D7C1C4 /* Frameworks */,
+				C42934E02B91C76600D7C1C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C42934E42B91C76600D7C1C4 /* PBXTargetDependency */,
+			);
+			name = midiMetalTests;
+			productName = midiMetalTests;
+			productReference = C42934E22B91C76600D7C1C4 /* midiMetalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C42934EB2B91C76600D7C1C4 /* midiMetalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42934FC2B91C76600D7C1C4 /* Build configuration list for PBXNativeTarget "midiMetalUITests" */;
+			buildPhases = (
+				C42934E82B91C76600D7C1C4 /* Sources */,
+				C42934E92B91C76600D7C1C4 /* Frameworks */,
+				C42934EA2B91C76600D7C1C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C42934EE2B91C76600D7C1C4 /* PBXTargetDependency */,
+			);
+			name = midiMetalUITests;
+			productName = midiMetalUITests;
+			productReference = C42934EC2B91C76600D7C1C4 /* midiMetalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C42934C92B91C76400D7C1C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C42934D02B91C76400D7C1C4 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					C42934E12B91C76600D7C1C4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C42934D02B91C76400D7C1C4;
+					};
+					C42934EB2B91C76600D7C1C4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C42934D02B91C76400D7C1C4;
+					};
+				};
+			};
+			buildConfigurationList = C42934CC2B91C76400D7C1C4 /* Build configuration list for PBXProject "midiMetal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C42934C82B91C76400D7C1C4;
+			productRefGroup = C42934D22B91C76400D7C1C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C42934D02B91C76400D7C1C4 /* midiMetal */,
+				C42934E12B91C76600D7C1C4 /* midiMetalTests */,
+				C42934EB2B91C76600D7C1C4 /* midiMetalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C42934CF2B91C76400D7C1C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42934DD2B91C76600D7C1C4 /* Preview Assets.xcassets in Resources */,
+				C42934D92B91C76600D7C1C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42934E02B91C76600D7C1C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42934EA2B91C76600D7C1C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C42934CD2B91C76400D7C1C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42935062B91C7C100D7C1C4 /* Shaders.metal in Sources */,
+				C42935022B91C79800D7C1C4 /* Renderer.swift in Sources */,
+				C42935002B91C78700D7C1C4 /* MetalView.swift in Sources */,
+				C42934D72B91C76400D7C1C4 /* ContentView.swift in Sources */,
+				C42935042B91C7A800D7C1C4 /* MIDIController.swift in Sources */,
+				C42934D52B91C76400D7C1C4 /* midiMetalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42934DE2B91C76600D7C1C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42934E72B91C76600D7C1C4 /* midiMetalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42934E82B91C76600D7C1C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42934F12B91C76600D7C1C4 /* midiMetalUITests.swift in Sources */,
+				C42934F32B91C76600D7C1C4 /* midiMetalUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C42934E42B91C76600D7C1C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C42934D02B91C76400D7C1C4 /* midiMetal */;
+			targetProxy = C42934E32B91C76600D7C1C4 /* PBXContainerItemProxy */;
+		};
+		C42934EE2B91C76600D7C1C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C42934D02B91C76400D7C1C4 /* midiMetal */;
+			targetProxy = C42934ED2B91C76600D7C1C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C42934F42B91C76600D7C1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C42934F52B91C76600D7C1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C42934F72B91C76600D7C1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = midiMetal/midiMetal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"midiMetal/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = antonio.midiMetal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C42934F82B91C76600D7C1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = midiMetal/midiMetal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"midiMetal/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = antonio.midiMetal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C42934FA2B91C76600D7C1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = antonio.midiMetalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/midiMetal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/midiMetal";
+			};
+			name = Debug;
+		};
+		C42934FB2B91C76600D7C1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = antonio.midiMetalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/midiMetal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/midiMetal";
+			};
+			name = Release;
+		};
+		C42934FD2B91C76600D7C1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = antonio.midiMetalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = midiMetal;
+			};
+			name = Debug;
+		};
+		C42934FE2B91C76600D7C1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = antonio.midiMetalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = midiMetal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C42934CC2B91C76400D7C1C4 /* Build configuration list for PBXProject "midiMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42934F42B91C76600D7C1C4 /* Debug */,
+				C42934F52B91C76600D7C1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42934F62B91C76600D7C1C4 /* Build configuration list for PBXNativeTarget "midiMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42934F72B91C76600D7C1C4 /* Debug */,
+				C42934F82B91C76600D7C1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42934F92B91C76600D7C1C4 /* Build configuration list for PBXNativeTarget "midiMetalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42934FA2B91C76600D7C1C4 /* Debug */,
+				C42934FB2B91C76600D7C1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42934FC2B91C76600D7C1C4 /* Build configuration list for PBXNativeTarget "midiMetalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42934FD2B91C76600D7C1C4 /* Debug */,
+				C42934FE2B91C76600D7C1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C42934C92B91C76400D7C1C4 /* Project object */;
+}
